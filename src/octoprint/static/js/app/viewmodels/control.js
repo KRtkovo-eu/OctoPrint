@@ -591,6 +591,31 @@ $(function() {
             return distance.toString().replace(".", "");
         };
 
+        /* Functions for DELTA printers */
+        self.selectPrinterType = 0;
+
+        self.sendDeltaHomeCommand = function () {
+            self.sendCustomCommand({
+              type:'command',
+              command:'G28'
+            })
+        }
+
+        self.sendDeltaAutocalibrationCommand = function () {
+            self.sendCustomCommand({
+              type:'command',
+              command:'G29'
+            })
+        }
+
+        self.changePrinterType = function (data) {
+            self.selectPrinterType = data;
+        }
+
+        self.isPrinterTypeDelta = function() {
+            return ((self.selectPrinterType == 1) ? true : false);
+        }
+
     }
 
     OCTOPRINT_VIEWMODELS.push([
