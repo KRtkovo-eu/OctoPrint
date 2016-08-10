@@ -1,8 +1,10 @@
-OctoPrint
+OtrokPrint
 =========
 
-OctoPrint provides a snappy web interface for controlling a 3D printer (RepRap, Ultimaker, ...). It is Free Software
+OtrokPrint provides a snappy web interface for controlling a 3D printer (RepRap, Ultimaker, Kossel, DeltaOTROK, ...). It is Free Software
 and released under the [GNU Affero General Public License V3](http://www.gnu.org/licenses/agpl.html).
+
+OtrokPrint is based on OctoPrint and is fully compatible. Read more about OctoPrint:
 
 Its website can be found at [octoprint.org](http://octoprint.org).
 
